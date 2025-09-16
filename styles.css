@@ -647,6 +647,133 @@ body {
     background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
 }
 
+/* Estilos para as novas seções do Dia Internacional do Podcast */
+.celebration-highlight {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    border: 3px solid #4a9eff;
+    box-shadow: 0 8px 30px rgba(74, 158, 255, 0.2);
+}
+
+.celebration-highlight h3 {
+    font-size: 2rem;
+    color: #4a9eff;
+    margin-bottom: 30px;
+    text-align: center;
+    border: none;
+}
+
+.celebration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.celebration-item {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.celebration-item:hover {
+    border-color: #4a9eff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.3);
+}
+
+.celebration-item h4 {
+    font-size: 1.3rem;
+    color: #4a9eff;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.celebration-item p {
+    color: #b0b0b0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Seção de Ideias de Celebração */
+.celebration-ideas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.celebration-idea {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #4a9eff;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.celebration-idea:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.2);
+}
+
+.celebration-idea h4 {
+    font-size: 1.3rem;
+    color: #4a9eff;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.celebration-idea p {
+    color: #b0b0b0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Seção de Impacto */
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.impact-item {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.impact-item:hover {
+    border-color: #4a9eff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.3);
+}
+
+.impact-item h4 {
+    font-size: 1.3rem;
+    color: #4a9eff;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.impact-item p {
+    color: #b0b0b0;
+    margin: 0;
+    line-height: 1.6;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .banner {
@@ -729,6 +856,25 @@ body {
     .footer {
         padding: 20px 5%;
     }
+    
+    .celebration-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .celebration-ideas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .celebration-highlight {
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -789,5 +935,15 @@ body {
     
     .spotify-player iframe {
         height: 152px;
+    }
+    
+    .celebration-highlight h3 {
+        font-size: 1.6rem;
+    }
+    
+    .celebration-item h4,
+    .celebration-idea h4,
+    .impact-item h4 {
+        font-size: 1.1rem;
     }
 }
